@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    background: #2F4F4F;
+    color: #DCDCDC;
+}
+.container {
+    margin-top: 50px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 100px;
+}
+.container__title {
+    font-size: 36px;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.container__subtitle {
+    padding-bottom: 10px;
+    font-size: 24px;
+}
+
+.form__element_login {
+    display: block;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+}
+
+.form__element {
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.form__element_submit > input {
+    margin-top: 10px;
+    color: #2F4F4F;
+    font-size: 18px;
+    background: #DCDCDC;
+    margin-bottom: 20px;
+    cursor: pointer;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+form {
+    margin: 0;
+}
+
+input {
+    height: 35px;
+    outline: none;
+    border: none;
+    padding: 0 10px;
+    width: 300px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    background: #DCDCDC;
+    color: #2F4F4F;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 0;
+    width: 35px;
+}
+
+label {
+    padding-left: 10px;
+    font-size: 18px;
+}
+
+.button {
+    width: 300px;
+    height: 35px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    background: #DCDCDC;
+    color: #2F4F4F;
+    line-height: 35px;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.button > a {
+    color: #2F4F4F;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.result {
+    font-size: 20px;
+    width: max-content;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.result__block {
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.result__block_count {
+    margin-top: 20px;
+    text-align: right;
+}

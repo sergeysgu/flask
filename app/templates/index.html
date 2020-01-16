@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class='container'>
+        <div class='container__title'>Вопрос</div>
+        {% if username != None %}
+            <div class='container__subtitle'>
+                {{username}}
+            </div>
+            {% if next != 0 %}
+                <div class='button'>
+                    <a href='/question/{{next}}'>Продолжить</a>
+                </div>
+            {% endif %}
+            <div class='button'>
+                    <a href='/question/1'>Начать</a>
+                </div>
+            {% if last_survey != 0 %}
+                <div class='button'>
+                    <a href='/result'>Результаты</a>
+                </div>
+            {% endif %}
+            <div class='button'>
+                <a href='/logout'>Выйти</a>
+            </div>
+        {% else %}
+            <form action="" method="post">
+                {% if error != None %}
+                    <div>{{error}}</div>
+                {% endif %}
+                <div class='form__element'>
+                    <div>
+                        <label for='username'>Имя пользователя</label>
+                        <input name='username' required />
+                    </div>           
+                </div>
+                <div class='form__element'>
+                    <div>
+                        <label for='username'>Пароль</label>
+                        <input name='password' required type='password' />
+                    </div>
+                </div>
+                <div class='form__element_submit'>
+                    <input type='submit' value='Войти'/>
+                </div>
+            </form>
+        {% endif %}
+    </div>
+{% endblock %}
